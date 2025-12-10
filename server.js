@@ -16,7 +16,7 @@ app.use(
 app.use(express.json());
 mongoose
     .connect(
-        "mongodb+srv://admin:Miguel519670@monitoramentomaquinas.028i9fw.mongodb.net/?appName=monitoramentoMaquinas",
+        "mongodb+srv://admin:Miguel519670@monitoramentomaquinas.028i9fw.mongodb.net/monitoramentoMaquinas?retryWrites",
         { useNewUrlParser: true, useUnifiedTopology: true }
     )
     .then(() => console.log("Conectado ao MongoDB"))
