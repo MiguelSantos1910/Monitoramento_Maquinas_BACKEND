@@ -23,10 +23,11 @@ mongoose
     .catch((err) => console.error("Erro ao conectar:", err));
 app.use("/api/maquinas", maquinaRoutes);
 app.use("/api/ordens", ordemRoutes);
-app.use("/api/usuario", usuarioRoutes);
+app.use("/api/usuarios", usuarioRoutes);
 app.listen(porta, () => {
     console.log(`Servidor rodando em http://localhost:${porta}`);
 });
+
 
 
 
