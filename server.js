@@ -5,7 +5,7 @@ const maquinaRoutes = require("./routes/maquinas");
 const ordemRoutes = require("./routes/oredemServico");
 const usuarioRoutes = require("./routes/usuario");
 const app = express();
-const porta = process.env.PORTA || 3000;
+const porta = process.env.PORTA || 10000;
 app.use(
     cors({
         origin: "https://monitoramento-maquinas-frontend.vercel.app" || "*",
@@ -27,3 +27,4 @@ app.use("/api/usuarios", usuarioRoutes);
 app.listen(porta, () => {
     console.log(`Servidor rodando em http://localhost:${porta}`);
 });
+
