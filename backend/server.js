@@ -5,10 +5,10 @@ const maquinaRoutes = require("./routes/maquinas");
 const ordemRoutes = require("./routes/oredemServico");
 const usuarioRoutes = require("./routes/usuario");
 const app = express();
-const porta = process.env.PORTA || 3000;
+const porta = process.env.PORT || 3000;
 app.use(
     cors({
-        origin: "https://monitoramento-maquinas-frontend.vercel.app" || "*",
+        origin: ["https://monitoramento-maquinas-frontend.vercel.app", "*"],
         methods: "GET, PUT, DELETE, POST",
         credentials: true,
     })
