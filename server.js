@@ -11,7 +11,7 @@ const porta = process.env.PORT || 10000;
 app.use(
     cors({
         origin: [
-            "https://monitoramento-maquinas-frontend.vercel.app",
+            "https://monitoramento-maquinas-frontend-a2j.vercel.app",
             "http://localhost:5173"
         ],
         methods: ["GET", "PUT", "DELETE", "POST"],
@@ -36,3 +36,4 @@ app.use("/api/usuarios", usuarioRoutes); // <-- CORREÇÃO AQUI
 app.listen(porta, () => {
     console.log(`Servidor rodando em http://localhost:${porta}`);
 });
+
