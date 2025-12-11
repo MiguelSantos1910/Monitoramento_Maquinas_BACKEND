@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
 const maquinaRoutes = require("./routes/maquinas.js");
-const ordemRoutes = require("./routes/oredemServico.js");
+const ordemRoutes = require("./routes/ordemServico.js");
 const usuarioRoutes = require("./routes/usuario.js");
 const app = express();
 const porta = process.env.PORT || 10000;
@@ -27,5 +27,6 @@ app.use("/api/usuario", usuarioRoutes);
 app.listen(porta, () => {
     console.log(`Servidor rodando em http://localhost:${porta}`);
 });
+
 
 
